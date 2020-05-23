@@ -1,5 +1,9 @@
 {
-  "*.+(js|jsx)": ["eslint --fix", "git add"],
-  "./src/**/*.js'": ["stylelint --syntax css --fix", "git add"],
-  "*.+(js|jsx|ts|tsx|json|css|md)": ["prettier --write", "git add"]
+    "*.+(js|jsx|ts|tsx)": [
+        "eslint --fix",
+        "git add",
+        "stylelint --syntax css --fix",
+        "git add"
+    ],
+    "*.+(js|jsx|ts|tsx|json|css|md)": ["prettier --write", "git add"]
 }
